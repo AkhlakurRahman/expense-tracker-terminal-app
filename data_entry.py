@@ -31,7 +31,7 @@ def get_amount():
         return get_amount()
 
 def get_category():
-        category = input('Enter a category (I for Income or E for Expense): ')
+        category = input('Enter a category (I for Income or E for Expense): ').capitalize()
         if category in CATEGORIES:
             return CATEGORIES[category]
         
